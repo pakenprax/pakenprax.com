@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>pakenprax</title>
+    <meta charset="utf-8" />
+    {% include redirect-to-domain.html %}
+    {% include redirect-to-https.html %}
+</head>
+<body>
+    <ul>
+        {% for culture in site.cultures %}
+        <li><a href="{{ culture.root }}">{{ culture.lang }}</a></li>
+        {% endfor %}
+    </ul>
+{{ content }}
+</body>
+</html>
