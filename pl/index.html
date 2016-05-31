@@ -4,4 +4,193 @@ ref: index
 lang: pl
 ---
 
-<h1>pakenprax.com/pl</h1>
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">Pakenprax</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#about">O nas</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Usługi</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Kontakt</a>
+                </li>
+                {% for culture in site.cultures %}
+                <li><a href="{{ culture.root }}"><span class="lang-xs" lang="{{ culture.lang }}"></span></a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Twój nowy partner w biznesie</h1>
+            <hr>
+            <p>Zapewnieniamy solidne rozwiązania programowe przyjazne dla użytkowników! <br />Sprawdź jak możesz ulepszyć swoją firmę!</p>
+            <a href="#about" class="btn btn-primary btn-xl page-scroll">Dowiedz się więcej</a>
+        </div>
+    </div>
+</header>
+
+<section class="bg-primary" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Mamy to czego potrzebujesz!</h2>
+                <hr class="light">
+                <p class="text-faded">Specjalizujemy się w usługach zarządzających i konsultingowych w zakresie oprogramowania, CMS, SEO oraz Marketingu Online. Jeśli Twoja firma potrzebuje usług związanych z aplikacjami internetowymi, szkoleń przy wdrażaniu nowego oprogramowania chętnie służymy pomocą! Dodatkowo oferujemy usługi hostingowe oraz dostarczamy rozwiązania SaaS.</p>
+                <a href="#services" class="btn btn-default btn-xl page-scroll">Do usług!</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Służymy Pomocą</h2>
+                <hr class="primary">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                    <h3>Solidne Rozwiązania</h3>
+                    <p class="text-muted">Nasze rozwiązania są efektem wieloletniego doświadczenia.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                    <h3>Jesteśmy dla Ciebie</h3>
+                    <p class="text-muted">Każdy projekt jest dla nas nowym wyzwaniem!</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Na Czasie</h3>
+                    <p class="text-muted">Sprawdzamy nowinki, śledzimy trendy, jesteśmy na czasie.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h3>Lubimy to co Robimy</h3>
+                    <p class="text-muted">To co robimy to więcej niż tylko praca, to także nasza pasja!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<aside id="portfolio" class="bg-dark">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>Zaufali Nam!</h2>
+
+            <a href="#" class="btn btn-default btn-xl wow tada" style="visibility: visible; animation-name: tada;">Dołącz Do Nich!</a>
+
+        </div>
+    </div>
+</aside>
+
+<aside class="clients">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="/img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="/img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="/img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a href="#">
+                    <img src="/img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Skontaktuj Się Z Nami!</h2>
+                <hr class="primary">
+                <p>Chcesz podjąć z nami współpracę? Czekamy! Zadzwoń do nas lub wyślij email a odezwiemy się do Ciebie tak szybko jak to możliwe!</p>
+            </div>
+            <div class="col-lg-4 col-lg-offset-2 text-center">
+                <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                <p>+48 691 967 330</p>
+            </div>
+            <div class="col-lg-4 text-center">
+                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                <p><a href="mailto:info@pakenprax.pl">info@pakenprax.pl</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="map" class="map">
+    <div style="height:500px">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?q=Dobrego+Pasterza+118E/2,+Kraków,+Polska&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4>
+                    <strong>Pakenprax Sp. z o. o.</strong>
+                </h4>
+                <p>ul. Dobrego Pasterza 118E/2<br>Kraków, 31-416</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> +48 691 967 330</li>
+                    <li>
+                        <i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:info@pakenprax.pl">info@pakenprax.pl</a>
+                    </li>
+                </ul>
+                <p class="text-muted small">Spółka z o. o. Pakenprax jest wpisana do rejestru przedsiębiorców Krajowego Rejestru Sądowego, prowadzonego przez Sąd Rejonowy dla Krakowa-Śródmieścia w Krakowie, Wydział XI Gospodarczy Krajowego Rejestru Sądowego pod numerem KRS 0000618905 (NIP: 6793110205)</p>
+                <hr class="small">
+                <p class="text-muted">Copyright © Pakenprax 2016</p>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -11,9 +11,9 @@ github: "pakenprax.github.io/pakenprax.com"
 
 # Site settings
 cultures:
-  - lang: "en"
-    root: "/" 
   - lang: "pl"
     root: "/pl/"
+  - lang: "en"
+    root: "/" 
   - lang: "nl"
     root: "/nl/"
