@@ -1,0 +1,13 @@
+/* TEAM */
+	Lead: Ken Van Gilbergen
+	Website: https://ict.ken.be
+	From: Leuven, Belgium
+
+	Web designer: Patrycja Niedzwiedzka
+	Twitter: http://it4blondes.com
+	From: Krakow, Poland
+
+/* THANKS */
+
+	Jekyll Structure: Sylvain Durand
+	Website: https://www.sylvaindurand.org/making-jekyll-multilingual/
