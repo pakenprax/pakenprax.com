@@ -121,32 +121,7 @@ lang: nl
     </div>
 </aside>
 
-<aside class="clients">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="/img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="/img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="/img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="#">
-                    <img src="/img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</aside>
+{% include clients.html %}
 
 <section id="contact">
     <div class="container">
@@ -168,11 +143,7 @@ lang: nl
     </div>
 </section>
 
-<section id="map" class="map">
-    <div style="height:500px">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="//www.google.com/maps/embed/v1/place?q=Dobrego+Pasterza+118E/2,+Kraków,+Polska&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
-    </div>
-</section>
+{% include map--google.html %}
 
 <footer>
     <div class="container">

@@ -17,3 +17,6 @@ cultures:
     root: "/" 
   - lang: "nl"
     root: "/nl/"
+
+analytics:
+  google_tracking_id: "UA-78587143-1"
